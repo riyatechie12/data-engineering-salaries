@@ -94,7 +94,7 @@ def parse_tech_stack(raw: pd.Series) -> pd.DataFrame:
             wide.loc[raw.str.contains(regex, regex=True), token.title] = True
     return wide
 
-
+https://www.edureka.co/blog/data-engineer-salary/
 salaries_df = load_data(st.secrets["public_gsheets_url"])
 salaries_df = salaries_df[["Submitted at", "Current Job Title", "Other", "Years of Experience", "City", "State", "Country", "Work Arrangement",
                            "Base Salary", "Currency", "Bonuses/Equity amount", "Industry", "Tech Stack", "Career plans in the next 3 months?"]]
